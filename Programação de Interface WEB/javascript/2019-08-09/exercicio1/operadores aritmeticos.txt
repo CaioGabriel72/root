@@ -1,0 +1,224 @@
+Operadores aritmeticos
+
++,-,*,/
+
+%: resto de divisão
+
+** : A² = a**2
+
+classe Math
+
+Math.sqrt(x)  = raíz quadrada
+
+Math.abs(x) |x| = modolo 
+
+Math.log10(n)  log 10 n  logaritimo
+
+Math.ceit	aredonda pra cima
+
+Math.floor	aredonda pra baixo
+
+
+Math.pow	potencial
+
+Math.cos	coseno
+
+
+Operadores de incremento e decremento
+
+X++
+
+X--
+
+X+= 3 -> x = x +3
+
++= , -=, *=, /=
+
+deslocamento de bit
+
+>> move para a direita
+
+<< move para a esquerda
+
+10 << =2
+
+0100 << 10  = 2¹º
+
+ 
+
+
+
+
+MDN Math = site
+
+MDN web docs
+
+
+
+Classe Number
+
+Number.parseInt("12"); converte em numero uma string
+
+
+number.parseInt("12");
+VM420:1 Uncaught ReferenceError: number is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM420:1
+Number.parseInt("12");
+12
+var n = Number.parseInt("12")
+undefined
+var n = Number.parseInt("xx12")
+undefined
+n
+NaN
+var n = Number.parseInt('a1xxx');
+undefined
+n
+NaN
+Number.isNaN(n);
+true
+var n = Number.parseInt('43');
+undefined
+n
+43
+Number.isNaN(n);
+false
+Number.isInteger(n):
+VM621:1 Uncaught SyntaxError: Unexpected token :
+Number.isInteger(n);
+true
+Number.isInteger("abc");
+false
+Number.parseFloat('1,2');
+1
+Number.parseFloat('1.2');
+1.2
+Number.MAX_VALUE
+1.7976931348623157e+308
+
+Math.sqrt(-4);
+NaN
+Math.sqrt(4);
+2
+
+
+
+
+
+Math.sqrt(4);
+2
+3/0
+Infinity
+var y = 3/0;
+undefined
+y
+Infinity
+y==Infinity
+true
+y
+Infinity
+y + 5
+Infinity
+y * 10
+Infinity
+10 / y
+0
+y / 10
+Infinity
+var nome = 'Caio';
+undefined
+nome
+"Caio"
+nome + ' '+'Mercury';
+"Caio Mercury"
+nome
+"Caio"
+nome + 97;
+"Caio97"
+var = 99;
+VM965:1 Uncaught SyntaxError: Unexpected token =
+var n = 99;
+undefined
+nome + n;
+"Caio99"
+nome * 5;
+NaN
+nome * nome;
+NaN
+5 * nome;
+NaN
+nome
+"Caio"
+
+
+Classe String
+
+nome
+"Caio"
+nome.charAt(1);
+"a"
+nome.[1];
+VM1097:1 Uncaught SyntaxError: Unexpected token [
+nome[1];
+"a"
+nome.indexOf('i');
+2
+nome = Araraquara;
+VM1313:1 Uncaught ReferenceError: Araraquara is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1313:1
+nome = 'Araraquara';
+"Araraquara"
+nome.indexOf('a');
+2
+nome.lastIndexOf('r');
+8
+nome.substring(2, 5);
+"ara"
+
+
+nome.substring(2, 5);
+"ara"
+nome.endsWith('ra');
+true
+nome.endsWith('es');
+false
+nome.toLocaleLowerCase();
+"araraquara"
+nome.toUpperCase();
+"ARARAQUARA"
+var nome = prompt('Nome: ');
+undefined
+nome.trim();
+"Gui"
+var nome = prompt('Nome: ');
+undefined
+nome
+"  G u i  "
+nome.trim();
+"G u i"
+nome.replace
+ƒ replace() { [native code] }
+nome.replace('Luiz','Antonio');
+"  G u i  "
+nome
+"  G u i  "
+nome.replace('G u i','Antonio');
+"  Antonio  "
+nome.replace(/\s+/,'');
+"G u i  "
+nome.replace(/\s+/g,'');
+"Gui"
+
+
+nome.trim().replace(/\s+/g,'');
+"Gui"
+'-'.repeat(10);
+"----------"
+
+
+
+
+
+
