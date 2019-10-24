@@ -24,7 +24,9 @@
 	$stmt->execute();
 	$v= array("name"=>"ID_ALUNO");
 	$f->add_select($v,$matriz);
-
+	
+	$matriz=null;
+	
 	$select = "SELECT ID_DISCIPLINA AS value, NOME AS texto FROM disciplina ORDER BY NOME";
 	$stmt = $conexao->prepare($select);
 	$stmt->execute();
